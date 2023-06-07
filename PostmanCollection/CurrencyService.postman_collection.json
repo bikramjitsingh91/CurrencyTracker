@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "45a8008f-bb58-46f7-bc31-e51611cd9476",
+		"name": "CurrencyService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16329866"
+	},
+	"item": [
+		{
+			"name": "local get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/getCurrencyInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getCurrencyInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "local Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"baseCurr\": \"USD\",\r\n    \"usd\": 1.0,\r\n    \"eur\": 0.891583452211127,\r\n    \"cad\": 1.2771932952924396,\r\n    \"gbp\": 0.7466119828815978,\r\n    \"bgn\": 1.7437589158345221,\r\n    \"jpy\": 115.5848787446505\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/saveCurrencyInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"saveCurrencyInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Local DEL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/clearCurrencyStore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"clearCurrencyStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCurrency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.202.120.202:5000/getCurrencyInfo",
+					"protocol": "http",
+					"host": [
+						"52",
+						"202",
+						"120",
+						"202"
+					],
+					"port": "5000",
+					"path": [
+						"getCurrencyInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveCurrency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"baseCurr\": \"USD\",\r\n    \"usd\": 1.0,\r\n    \"eur\": 0.891583452211127,\r\n    \"cad\": 1.2771932952924396,\r\n    \"gbp\": 0.7466119828815978,\r\n    \"bgn\": 1.7437589158345221,\r\n    \"jpy\": 115.5848787446505\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.202.120.202:5000/saveCurrencyInfo",
+					"protocol": "http",
+					"host": [
+						"52",
+						"202",
+						"120",
+						"202"
+					],
+					"port": "5000",
+					"path": [
+						"saveCurrencyInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clearCurrencyStore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://52.202.120.202:5000/clearCurrencyStore",
+					"protocol": "http",
+					"host": [
+						"52",
+						"202",
+						"120",
+						"202"
+					],
+					"port": "5000",
+					"path": [
+						"clearCurrencyStore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
